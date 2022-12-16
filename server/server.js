@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv').config();
 const next = require("next");
-const dev = process.env.NODE_ENV !== "production";
+const dev = process.env.NODE !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 const server = express();
